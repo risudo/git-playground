@@ -1,3 +1,4 @@
+from decimal import Decimal
+
 def calculate_price(amount, rate):
-    # バグ: rateが0の時にエラーが起きる可能性
-    return amount * rate
+    return str(Decimal(str(amount)) * Decimal(str(rate)))
